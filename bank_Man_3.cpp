@@ -289,33 +289,17 @@ int getValidatedChoice() {
     }
 }
 
-// Cover Page Function
-void displayCoverPage() {
-    cout << "-------------------------------------------------\n";
-    cout << "        Bank Account Management System\n";
-    cout << "            Arba Minch University\n";
-    cout << "  Institution of Computing and Software Engineering\n\n";
-    cout << "  Group Members:\n";
-    cout << "      1. Hanan Nasir       - NSR/464/16\n";
-    cout << "      2. Ebasa Sagni       - NSR/277/16\n";
-    cout << "      3. Rewda Oumer       - NSR/813/16\n";
-    cout << "      4. Eba Bayana        - NSR/276/16\n";
-    cout << "      5. Usman Zewde       - NSR/996/16\n";
-    cout << "-------------------------------------------------\n";
-    cout << "  Entry Code: *889#\n";
-    cout << "-------------------------------------------------\n";
-}
 
 
 int main() {
 
     string entryCode;
 
-    displayCoverPage();
+    cout << "...... Welcome to Your Banking....." << endl;
 
 // Loop until the correct entry code is entered
 do {
-    cout << "\nEnter the program entry code: ";
+    cout << "\nEnter the program entry code(*889#): ";
     cin >> entryCode;
 
     if (entryCode != "*889#") {
